@@ -52,9 +52,9 @@ n.go
 
 ```
 
-## Keywords (3 of 25)
+## Keywords (12 of 25)
 
-func,import,package
+case,const,default,if,else,fallthrough,func,import,package,switch,return,var
 
 ## Builtin functions(2 of 18)
 print, println
@@ -63,4 +63,3 @@ print, println
 ## For Linking Issue
 
 sudo GODEBUG=installgoroot=all go install std
-

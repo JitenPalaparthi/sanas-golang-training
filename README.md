@@ -52,13 +52,12 @@ n.go
 
 ```
 
-## Keywords (12 of 25)
+## Keywords (21 of 25)
 
-case,const,default,if,else,fallthrough,func,import,package,switch,return,var
+break,continue,case,const,default,if,else,fallthrough,for,func,goto,import,interface,map,package,range,return,type,switch,struct,var 
 
-## Builtin functions(2 of 18)
-print, println
-
+## Builtin functions(15 of 18)
+append,cap,clear,copy,complex,delete, imag,len, make, min, max,new, print, println,real,
 
 ## For Linking Issue
 

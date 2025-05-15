@@ -8,7 +8,12 @@ import (
 func main() {
 	fmt.Fprintln(os.Stdout, "Hello World")
 	fw1 := NewFileWriter("data.txt")
+
 	fmt.Fprintln(fw1, "Hello World")
+	fmt.Fprintln(os.Stdout, "Hello World")
+
+	var myWriter1 MyWriter = fw1
+	myWriter1.Write([]byte("Hello Sanas\n"))
 
 	var fw2 *FileWriter
 
@@ -61,18 +66,14 @@ func (fw *FileWriter) Write(p []byte) (n int, err error) {
 	defer f.Close()
 	return f.Write(p)
 }
-
-// type Rect struct {
-// 	L, B float32
-// }
-
-//	func NewRect(l, b float32) *Rect {
-//		return &Rect{l, b}
-//	}
 func NewFileWriter(fname string) *FileWriter {
 	return &FileWriter{fname}
 }
 
 func DefaultFileWriter() *FileWriter {
 	return &FileWriter{"data.txt"}
+}
+
+type MyWriter interface {
+	Write(p []byte) (n int, err error)
 }

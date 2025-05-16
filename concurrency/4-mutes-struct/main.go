@@ -11,6 +11,7 @@ var (
 type Counter struct {
 	Count int
 	mu    *sync.Mutex
+	//mur   *sync.RWMutex
 }
 
 func NewCounter() *Counter {

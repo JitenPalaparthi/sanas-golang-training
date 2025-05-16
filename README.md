@@ -52,13 +52,16 @@ n.go
 
 ```
 
-## Keywords (21 of 25)
+## Keywords (25 of 25)
 
-break,continue,case,const,default,if,else,fallthrough,for,func,goto,import,interface,map,package,range,return,type,switch,struct,var 
+break,chan,continue,case,const,defer,default,if,else,fallthrough,for,func,go,goto,import,interface,map,package,range,return,type,select,switch,struct,var 
 
-## Builtin functions(15 of 18)
-append,cap,clear,copy,complex,delete, imag,len, make, min, max,new, print, println,real,
+## Builtin functions(18 of 18)
+append,cap,clear,close,copy,complex,delete, imag,len, make, min, max,new, panic,print, println,real,recover
 
 ## For Linking Issue
 
 sudo GODEBUG=installgoroot=all go install std
+
+
+https://docs.google.com/presentation/d/1WVvsbvgHKBrNrKtnT4XWRfrsfkNlbw5u6L9O1DeVBn0/edit?usp=sharing
